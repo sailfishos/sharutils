@@ -1,0 +1,152 @@
+* Tue Feb 16 2010 Anas Nashif <anas.nashif@intel.com> - 4.7
+- Use spectacle
+
+* Wed Feb 03 2010 Yi Yang <yi.y.yang@intel.com> - 4.7
+- Update to 4.7
+
+* Tue Dec 16 2008 Anas Nashif <anas.nashif@intel.com> 4.6.3
+- Fixed rpmlint errors in Summary tag
+
+* Fri Sep 12 2008 Yi Yang <yi.y.yang@intel.com> 4.6.3
+- Mark man and info as %doc and remove installation warnings of info files
+
+* Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 4.6.3-2
+- Autorebuild for GCC 4.3
+
+* Tue Apr 10 2007 Than Ngo <than@redhat.com> - 4.6.3-1
+- 4.6.3
+
+* Fri Jul 14 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-2
+- rebuild
+
+* Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-1.2
+- bump again for double-long bug on ppc(64)
+
+* Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* Mon Feb 06 2006 Florian La Roche <laroche@redhat.com>
+- 4.6.1
+
+* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* Thu Nov 03 2005 Than Ngo <than@redhat.com> 4.6-2
+- fix wrong permission #171889
+
+* Wed Oct 26 2005 Than Ngo <than@redhat.com> 4.6-1
+- update to 4.6
+
+* Mon Apr 11 2005 Than Ngo <than@redhat.com> 4.2.1-27
+- apply debian patch to fix insecure temporary file creation
+  in unshar #154049, CAN-2005-0990
+
+* Thu Mar 31 2005 Than Ngo <than@redhat.com> 4.2.1-26
+- apply patch to fix multiple buffer overflows #152571
+
+* Mon Mar 07 2005 Than Ngo <than@redhat.com> 4.2.1-25
+- cleanup
+
+* Sat Mar 05 2005 Than Ngo <than@redhat.com> 4.2.1-24
+- rebuilt
+
+* Wed Feb 09 2005 Than Ngo <than@redhat.com> 4.2.1-23
+- rebuilt
+
+* Fri Oct 01 2004 Than Ngo <than@redhat.com> 4.2.1-22
+- fix buffer overflow in shar, (from Ulf Harnhammer)
+
+* Thu Jun 24 2004 Than Ngo <than@redhat.com> 4.2.1-21
+- add builrequires on gettext, bug #126599
+
+* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Fri May 21 2004 Than Ngo <than@redhat.com> 4.2.1-19
+- add suse patch, which fixes buffer overflow in handling of -o option, #123230
+
+* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Mon Jun 16 2003 Than Ngo <than@redhat.com> 4.2.1-17
+- rebuilt
+
+* Wed Jun 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Wed Jan 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* Wed Dec 11 2002 Tim Powers <timp@redhat.com> 4.2.1-13
+- rebuild on all arches
+
+* Mon Jun 24 2002 Than Ngo <than@redhat.com> 4.2.1-12
+- fixed #66892
+
+* Fri Jun 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* Thu May 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* Sun Apr 14 2002 Than Ngo <than@redhat.com> 4.2.1-9
+- added fix for Unsecure outputfile handling in uudecode (#63303)
+- Copyright -> License
+
+* Fri May 11 2001 Than Ngo <than@redhat.com>
+- use find_lang macro
+- use mktemp
+
+* Wed Jul 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* Sun Jun 18 2000 Than Ngo <than@redhat.de>
+- fix typo (Bug# 12447)
+
+* Sun Jun 18 2000 Than Ngo <than@redhat.de>
+- rebuilt in the new build environment
+
+* Thu Jun 08 2000 Than Ngo <than@redhat.de>
+- add %defattr(-,root,root) (Bug# 11990)
+- use rpm macros
+
+* Sun May 21 2000 Ngo Than <than@redhat.de>
+- rebuild to put man pages and info files in right place
+
+* Mon Feb 07 2000 Preston Brown <pbrown@redhat.com>
+- rebuild to gzip man pages
+
+* Tue Dec 21 1999 Preston Brown <pbrown@redhat.com>
+- sharutils 4.2.1 for Y2K (2 digit date) fix.
+- ja message catalog move (#7878)
+
+* Tue Sep  7 1999 Jeff Johnson <jbj@redhat.com>
+- handle spaces in uuencoded file names (David Fox <dsfox@cogsci.ucsd.edu>).
+
+* Wed Jul 28 1999 Cristian Gafton <gafton@redhat.com>
+- use the /usr/share/locale for the localedir instead of /usr/lib/locale
+  (#2998)
+
+* Sun Mar 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 12)
+
+* Wed Dec 30 1998 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* Fri Apr 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* Sat Apr 11 1998 Cristian Gafton <gafton@redhat.com>
+- manhattan rebuild
+
+* Fri Oct 17 1997 Donnie Barnes <djb@redhat.com>
+- ALRIGHT!  Woo-hoo!  Erik already did the install-info stuff!
+- added BuildRoot
+- spec file cleanups
+
+* Sun Sep 14 1997 Erik Troan <ewt@redhat.com>
+- uses install-info
+
+* Fri Jul 18 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
