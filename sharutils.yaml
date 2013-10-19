@@ -7,6 +7,8 @@ License: GPLv3
 URL: http://www.gnu.org/software/sharutils/
 Sources:
     - ftp://ftp.gnu.org/gnu/sharutils/REL-%{version}/sharutils-%{version}.tar.bz2
+Patches:
+    - fix-glibc-gets.patch
 Description: |
     The sharutils package contains the GNU shar utilities, a set of tools
     for encoding and decoding packages of files (in binary or text format)
