@@ -1,4 +1,7 @@
-* Sat Oct 10 2013 Carsten Munk <carsten.munk@jollamobile.com> - 4.11.1
+* Thu Jan 02 2025 Matti Lehtimäki <matti.lehtimaki@jolla.com> - 4.15.2
+- Update to 4.15.2. JB#62204
+
+* Thu Oct 10 2013 Carsten Munk <carsten.munk@jollamobile.com> - 4.11.1
 - Apply patch to work with gets-less-glibc
 
 * Tue Nov 22 2011 Marko Saukko <marko.saukko@cybercom.com> - 4.11.1
