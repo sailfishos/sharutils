@@ -1,7 +1,7 @@
 Name:       sharutils
 Summary:    The GNU shar utilities for packaging and unpackaging shell archives
 Version:    4.15.2
-Release:    1
+Release:    2
 # The main code:                GPLv3+
 # intl/dngettext.c:             LGPLv2+
 # lib (gnulib):                 GPLv3+
@@ -33,6 +33,13 @@ Patch3:     %{name}-4.15.2-Fix-building-with-GCC-10.patch
 # Fix building with GCC 10,
 # <https://lists.gnu.org/archive/html/bug-gnu-utils/2020-01/msg00001.html>
 Patch4:     %{name}-4.15.2-Do-not-include-lib-md5.c-into-src-shar.c.patch
+# 1/3 Fix building with GCC 15, bug #2341343,
+# <https://lists.gnu.org/archive/html/bug-gnu-utils/2025-03/msg00000.html>
+Patch5:     %{name}-4.15.2-ISO-C23-Backport-stdbool.m4-from-gnulib-devel-0-52.2.patch
+# 2/3 Fix building with GCC 15, bug #2341343,
+Patch6:     %{name}-4.15.2-ISO-C23-Port-getcwd.m4-to-ISO-C23.patch
+# 3/3 Fix building with GCC 15, bug #2341343,
+Patch7:     %{name}-4.15.2-ISO-C23-Port-the-code-to-ISO-C23.patch
 BuildRequires:  gettext
 
 %description
@@ -54,7 +61,7 @@ Install sharutils if you send binary files through e-mail.
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-
+autoreconf
 %configure --disable-static
 %make_build
 
